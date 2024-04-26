@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        body {
+            background: url("./assets/Mask group.png") top center no-repeat,
+            url('./assets/Group 27169.png') center bottom no-repeat ;  
+            background-size: auto, 80% 600px;
+       
+            background-color: #f5f8ff;
+        }
+
+        .banner-height {
+            /* min-height: 100vh; */
+        }
+
+        .container {
+            display: flex;
+
+            width: 100%;
+            justify-content:space-around;
+            margin: auto;
+        }
+
+        .about {
+            display: flex;
+
+            width: 30%;
+            justify-content: space-between;
+            background-color: #FFFFFF;
+            
+            border-radius: 10px;
+            height: 50px;
+
+        }
+
+        .getintouch {
+            background: url('./assets/spiral.png') right top no-repeat, url('./assets/starimage.png') left bottom no-repeat;
+            /* background-repeat: no-repeat;
+            background-position-x: right;
+            background-position-y: top;
+            background-image: url('./assets/starimage.png');
+            background-repeat: no-repeat;
+            background-position-x: left;
+            background-position-y: bottom; */
+        }
+
+        #getintouch {
+            margin-left: 10%;
+        }
+
+        .sign {
+            display: flex;
+            width: 14%;
+            justify-content: space-between;
+
+
+
+        }
+
+        .home {
+            color: #252432;
+        }
+
+        .about {
+            color: #8987A1;
+        }
+
+        .signup {
+            background-color: blue;
+            color: white;
+            height: 30px;
+            margin-bottom: 100px;
+            padding-top: 2px;
+            font-size: medium;
+
+            width: 80px;
+            justify-content: center;
+          
+           
+            margin-left: 5px;
+            border-radius: 5px;
+        }
+
+        .Awesome {
+           
+            width: 80%;
+            height: 75vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .banner-text {
+            width: 764px;
+            font-size: 74px;
+        }
+
+        .get {
+            background-color: #252432;
+            color: white;
+border-radius: 10px;
+            height: 30px;
+            width: 120px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding-top: 5px;
+            margin: auto;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: (2, ifr);
+            gap: 20px;
+            grid-template-areas: "a b c d"
+                "e e f d"
+            
+        }
+
+        .checkourwork {
+            background-image: url("./assets/checkimage.png");
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+
+        #pricing {
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            margin: auto;
+            /* "display: flex; width: 70%;justify-content:space-between;margin: auto;" */
+        }
+
+        #pprice {
+            color: rgba(137, 135, 161, 1);
+            width: 270px
+                /* "color: rgba(137, 135, 161, 1);width: 270px; */
+        }
+
+        #unprice {
+            color: rgba(137, 135, 161, 1);
+            width: 340px;
+        }
+
+        #buttonmeating {
+            background-color: #FFFFFF;
+            margin-top: 20px;
+        }
+
+        #buttonmeating+h3 {
+            margin-bottom: -10px;
+        }
+
+
+        #schedulemeating {
+            background-color: #5B54FF;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            padding-top: 10px;
+            border-radius: 10px;
+            margin-left: 20px;
+            color: white;
+        }
+
+        .faq {
+            background-image: url('./assets/full-spiral.png');
+            background-repeat: no-repeat;
+            background-size: 375px;
+        }
+
+        #input {
+            width: 500px;
+            height: 30px;
+        }
+
+        #inputbutton {
+            background-color: #5B54FF;
+            width: 505px;
+            height: 30px;
+            text-align: center;
+            padding-top: 10px;
+            border-radius: 10px;
+            color: white;
+            font-size: medium;
+        }
+
+        #last {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            margin-top: 70px;
+            margin-left: 20px;
+        }
+
+        @media all and (min-width:80px) and (max-width:900px) {
+
+            #grid {
+                border: 1px solid red;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: (3, ifr);
+                gap: 20px;
+                grid-template-areas: "a b"
+                    "c d"
+                    "e f"
+            }
+
+            .about {
+                display: flex;
+
+                width: 120%;
+                /* grid-template-columns: repeat(2,1fr);
+       grid-template-rows: auto; */
+                background-color: #FFFFFF;
+                border: 1px solid red;
+                border-radius: 10px;
+                height: 50px;
+
+            }
+
+            .container {
+                display: flex;
+
+                width: 150%;
+                justify-content: space-between;
+                margin: auto;
+            }
+
+            .sign {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                margin-left: 20px;
+
+
+
+            }
+
+            .get {
+                background-color: #252432;
+                color: white;
+                margin-left: 30%;
+                height: 30px;
+                width: 110px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                padding-top: 5px;
+             
+            }
+
+            #pricing {
+                display: flex;
+                width: 50%;
+                justify-content: space-between;
+                /* "display: flex; width: 70%;justify-content:space-between;margin: auto;" */
+            }
+
+            #pprice {
+                color: rgba(137, 135, 161, 1);
+                width: 100px
+                    /* "color: rgba(137, 135, 161, 1);width: 270px; */
+            }
+
+            #unprice {
+                color: rgba(137, 135, 161, 1);
+                width: 150px;
+            }
+
+
+            #buttonmeating {
+                border: 1px solid blue;
+                margin-top: 20px;
+                width: 60%;
+            }
+
+            #schedulemeating {
+                background-color: red;
+                height: 30px;
+                text-align: center;
+                padding-top: 10px;
+                border-radius: 10px;
+                color: white;
+                width: 60%;
+            }
+
+            #input {
+                width: 140px;
+                height: 30px;
+
+            }
+
+            #inputbutton {
+                background-color: #5B54FF;
+                width: 63%;
+                height: 30px;
+                text-align: center;
+                padding-top: 10px;
+                border-radius: 10px;
+                color: white;
+            }
+
+            #last {
+                display: flex;
+                justify-content: space-between;
+                width: 60%;
+                margin-top: 70px;
+            }
+
+            #getintouch {
+                margin-left: 5%;
+                margin-bottom: 10px;
+            }
+        }
+
+        #grid>div:nth-child(1) {
+            grid-area: a;
+        }
+
+        #grid>div:nth-child(2) {
+            grid-area: b;
+        }
+
+        #grid>div:nth-child(3) {
+            grid-area: c;
+        }
+
+        #grid>div:nth-child(4) {
+            grid-area: d;
+        }
+
+        #grid>div:nth-child(5) {
+            grid-area: e;
+        }
+
+        #grid>div:nth-child(6) {
+            grid-area: f;
+        }
+
+        #grid>div {
+            background-color: #FFFFFF;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-height">
+        <div class="container">
+            <h3>Faster UI </h3>
+            <div class="about">
+                <p class="home">Home</p>
+                <p>About</p>
+                <p>How it Works</p>
+                <p>Services</p>
+            </div>
+            <div class="sign">
+                <p>Sign in</p>
+                <p class="signup">Sign Up</p>
+            </div>
+
+        </div>
+        <div class="Awesome text-center">
+            <h1 class="banner-text">Awesome UI Dark Template for webflow agency</h1>
+            <div class="center">
+                <p class="get">Get In Touch</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="width: 80%;margin: auto;margin-top:30px;">
+        <h2>What We do</h2>
+        <div id="grid">
+            <div>
+
+                <p>logo</p>
+                <h3>Web design</h3>
+                <p>from concept to launch , we create stunning user-centric websites that elevate your brand and engage
+                    your audience</p>
+            </div>
+            <div>
+
+                <p>logo</p>
+                <h3>UI/UX Design</h3>
+                <p>from concept to launch , we create stunning user-centric websites that elevate your brand and engage
+                    your audience</p>
+            </div>
+            <div>
+
+                <p>logo</p>
+                <h3>Responsive Design</h3>
+                <p>from concept to launch , we create stunning user-centric websites that elevate your brand and engage
+                    your audience</p>
+            </div>
+            <div>
+
+                <p>logo</p>
+                <h3>E-commerce Solutions</h3>
+
+                <p>from concept to launch , we create stunning user-centric websites that elevate your brand and engage
+                    your audience</p>
+                <div style="background-color: #5B54FF;height: 180px; margin: 5px;">
+                    <img src="https://s3-alpha-sig.figma.com/img/1165/94ac/c296ac58767a55e455e5f782f3a29afa?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UNVsxI-MwYkdtxEWPUr96gwN97csAV9tqCQiSM6CJWe~ZtEtgvil18fYdDVdTBHzsaO9kXOMWsDweKxmrXfJ-FbVAyR9phwnL-3aPgFAcShcu8L3K10RUV5AkXdmynbdlA9PGAXvRbLccU2WcO1e6D28wPshkS6cWfVCCQudq2dpJU0HZKelERHUukGvUUHVYkL96CqaUrShFXA28abh4cTFtPNYOue5clPatw0zOVJs7FRCi0Q-ADcJm2fRpjZsCvbno09Lp44iCF04PRiMee8L39rXTDB3wqPYas6H2QxjWV35lzXxX5MGO7DSBpNA8v4ov7iK1HwkQnF7BoSbcQ__"
+                        alt="photo" height="100%" width="100%">
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div>
+                    <p>logo</p>
+                    <h3>Webflow</h3>
+                    <p>from concept to launch , we create stunning user-centric websites that elevate your brand and
+                        engage your audience</p>
+                </div>
+                <div
+                    style="background-color: #5B54FF;margin: 3%; min-width: 218px; display:flex; justify-content: center; align-items: center; ">
+                    <img src="./assets/wname.png" alt="wname">
+                </div>
+            </div>
+
+            <div>
+
+                <p>logo</p>
+                <h3>Custom Development</h3>
+                <p>from concept to launch , we create stunning user-centric websites that elevate your brand and engage
+                    your audience</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="checkourwork">
+        <div
+            style="text-align: center;display: flex;justify-content: space-around;width: 80%;margin: auto;margin-top: 60px;border: 10 px soild red;">
+            <div
+                style="width: 40px;height: 40px;border-radius: 50%;background-color: rgba(255, 255, 255, 1);">
+                ← </div>
+            <div>
+                <div style="margin-bottom: 20px; font-size: 60px;font-style:bold;">Check our work
+
+                </div>
+                <p style="width: 300px;color: rgba(137, 135, 161, 1);">Take a look at some of our recent projects to see
+                    how
+                    we've helped businesses like yours succeed online.</p>
+            </div>
+
+            <div style="width: 40px;height: 40px;border-radius: 50%;background-color: rgba(255, 255, 255, 1);"> → </div>
+        </div>
+        <div style="width: 80%; overflow-x: scroll;margin: auto;">
+            <div style="display: flex; gap: 10px;height: 400px;">
+                <div style="height: 100%; min-width: 700px;">
+                    <img src="./assets/c2.png" alt="c2" height="100%" width="100%">
+                </div>
+                <div style="height: 100%; min-width: 700px;">
+                    <img src="./assets/c2.png" alt="c2" height="100%" width="100%">
+                </div>
+                <div style="height: 100%; min-width: 700px;">
+                    <img src="./assets/c2.png" alt="c2" height="100%" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div
+        style=" margin: auto;width: 80%;text-align: center;margin-top: 30px;margin-bottom: 20px;">
+        <div
+            style="display: flex; align-items: center; gap: 40px; justify-content: center; background-color: #fff; padding: 20px; border-radius: 22px; width: fit-content; margin: auto;">
+            <div class="groupimage">
+                <img src="./assets/GroupImage.png" alt="group image">
+            </div>
+            <div class="review">
+                <div style="font-size: 16px;"><strong>5.0</strong> <span>Based on</span> <strong>145</strong>
+                    <span>Reviews</span></div>
+                <div class="star" style="text-align: left;">
+                    <img src="./assets/Star 1.png" alt="star">
+                    <img src="./assets/Star 1.png" alt="star">
+                    <img src="./assets/Star 1.png" alt="star">
+                    <img src="./assets/Star 1.png" alt="star">
+                    <img src="./assets/Star 1.png" alt="star">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="pricing">
+        <div>
+            <h2>Pricing</h2>
+            <p id="pprice"> Take a look at some of our recent projects to see how we've helped businesses like yours
+                succeed online.
+            </p>
+            <div id="buttonmeating">
+                <h3> Let’s Schedule </h3>
+                <h3>a Meeting</h3>
+
+                <p id="schedulemeating">Schedule Meeting</p>
+            </div>
+
+        </div>
+        <div>
+
+            <h3>Unlimited Services</h3>
+            <p id="unprice">Take a look at some of our recent projects to see how we've helped businesses like yours
+                succeed online.</p>
+            <div style="display: flex;justify-content: space-between;">
+                <div>
+                    <p>Unlimited requests</p>
+                    <p>Unlimited requests</p>
+                    <p>Unlimited requests</p>
+
+
+                </div>
+                <div>
+                    <p>Unlimited requests</p>
+                    <p>Unlimited requests</p>
+                    <p>Unlimited requests</p>
+                </div>
+            </div>
+            <div style="display: flex;justify-content: space-between;width: 80%;">
+                <h2>$ 3,250/mo </h2>
+                <p> → </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div
+        style="display: flex;width: 80%;margin: auto;justify-content: space-between;margin-top: 50px;">
+        <div class="faq"
+            style="width: 100%;display: flex; flex-direction: column; justify-content: center;align-items: center  ;">
+            <div style=" font-size: 50px;">
+                <h2>Frequently<br />
+                    Asked<br />
+                    Quetions<br />
+                </h2>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h4> How can I contact Inkyy Team?</h4>
+                <p style="color: rgba(137, 135, 161, 1);">You can reach us through our contact form on our website or by
+                    emailing us at </p>
+                <p style="color: rgba(137, 135, 161, 1);">hello@inkyy.com We typically respond within 24 hours.</p>
+
+            </div>
+            <div
+                style="display: flex;justify-content: space-between;text-align: center;margin: 5px;">
+                <h4>What services do you offer?</h4>
+                <p> +</p>
+            </div>
+            <div
+                style="display: flex;justify-content: space-between;text-align: center;margin: 5px">
+                <h4>Do you provide website maintenance services?</h4>
+                <p> +</p>
+            </div>
+            <div
+                style="display: flex;justify-content: space-between;text-align: center;margin: 5px">
+                <h4> How long does it take to design and develop a website?</h4>
+                <p> +</p>
+            </div>
+            <div
+                style="display: flex;justify-content: space-between;text-align: center;margin: 5px">
+                <h4>Do you require a deposit for projects?</h4>
+                <p> +</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="getintouch" style="width: 80%;margin: auto;">
+        <div style="width: 80%;padding-left: 35%;margin-top: 50px;">
+            <h2 id="getintouch">Let’s Get in Touch</h2>
+            <br>
+            <label>Email</label>
+            <br>
+            <input id="input" placeholder="example@gmail.com" />
+            <br>
+            <br>
+            <label>Name</label>
+            <br>
+            <input id="input" placeholder="Full name" />
+            <br>
+            <br>
+            <label>message</label>
+            <br>
+            <input id="input" placeholder="write your message..." height="40px" />
+
+            <p id="inputbutton">Get in Touch</p>
+
+        </div>
+
+    </div>
+    <div class="footerimgae" style="width: 70%;margin: auto; background-color: #f5f8ff;border-radius: 20px;">
+        <div style="display: flex;width: 60%;margin-left: 20%;justify-content:space-around;">
+            <div>
+                <h2>FasterUI</h2>
+                <p>
+                    Ready to elevate your online presence?
+                </p>
+                <p> Contact us today to discuss
+                    your project and</p>
+                <p> discover how we can bring your vision to life.</p>
+                <br>
+                <br>
+
+                <p>Made with love powered by inkyy.com</p>
+            </div>
+            <div id="last">
+                <p>Home</p>
+                <p>About</p>
+                <p>How its Works</p>
+                <p>services</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
